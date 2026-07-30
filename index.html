@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Currency Converter</h1>
+      <p>Convert between popular currencies using a simple standalone tool.</p>
+
+      <form id="converter-form" class="converter-form">
+        <div class="field">
+          <label for="amount">Amount</label>
+          <input id="amount" type="number" min="0" step="0.01" value="100" />
+        </div>
+        <div class="field">
+          <label for="fromCurrency">From</label>
+          <select id="fromCurrency"></select>
+        </div>
+        <div class="field">
+          <label for="toCurrency">To</label>
+          <select id="toCurrency"></select>
+        </div>
+        <button type="submit">Convert</button>
+      </form>
+
+      <div class="result-box">
+        <p id="conversionMessage">Enter an amount to see the converted value.</p>
+        <p id="resultValue" class="result-value"></p>
+        <p id="rateInfo"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
